@@ -22,9 +22,9 @@ namespace Holdsystemet
                 }
                 else
                 {
-                    Console.WriteLine("ID skal være større end 0");
+                    //Console.WriteLine("ID skal være større end 0");
                     
-                    throw new Exception("stop");
+                    throw new Exception("ID skal være større end 0");
                 }
 
 
@@ -41,11 +41,15 @@ namespace Holdsystemet
                 }
                 else
                 {
-                    Console.WriteLine("Navn skal være mindst 2 tegn langt");
+                    // Console.WriteLine("Navn skal være mindst 2 tegn langt");
+
+                    throw new Exception("Navn skal være mindst 2 tegn langt");
                 }
             }
         }
         public string Adresse { get; set;}
+
+
         public string CPRNummer {
             get { return adresse; }
             set
@@ -56,7 +60,9 @@ namespace Holdsystemet
                 }
                 else
                 {
-                    Console.WriteLine("CPRNummer skal være præcis 10 tegn langt");
+                    //Console.WriteLine("CPRNummer skal være præcis 10 tegn langt");
+
+                    throw new Exception("CPRNummer skal være præcis 10 tegn langt");
                 }
 
                 
